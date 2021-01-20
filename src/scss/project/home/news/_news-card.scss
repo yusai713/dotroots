@@ -1,0 +1,25 @@
+.news-card {
+	&__link {
+		border-radius: 30px;
+		&::before {
+			background-color: #000;
+			opacity: 0.3;
+			border-radius: 30px;
+		}
+	}
+	&__box {
+		font-family: ProximaNova;
+		bottom: 24px;
+		left: 28px;
+		color: #fff;
+		font-weight: 800;
+	}
+	&__date {
+		font-size: 14px;
+		line-height: 1.2;
+	}
+	&__ttl {
+		line-height: 1.8;
+		margin-top: 10px;
+	}
+}

@@ -1,0 +1,15 @@
+html {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	text-size-adjust: 100%;
+	text-rendering: optimizeLegibility;
+	height: 100%;
+	font-size: 16px;
+	//scroll-behavior: smooth;
+}
+
+body {
+	color: $color-font-base;
+	font-family: $font-family;
+	position: relative;
+}

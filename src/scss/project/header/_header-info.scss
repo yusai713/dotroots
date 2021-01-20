@@ -1,0 +1,15 @@
+.header-info {
+	&__area {
+		font-size: 18px;
+		line-height: 1.2;
+	}
+	&__time {
+		font-size: 14px;
+		font-weight: 900;
+		line-height: 1.4;
+		margin-top: 20px;
+		& + & {
+			margin-top: 6px;
+		}
+	}
+}

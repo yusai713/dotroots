@@ -1,0 +1,13 @@
+/* z-index
+---------------------*/
+$layers: (
+	modal: 100,
+	drawer: 40,
+	sp-menu: 35,
+	floating: 30,
+	header: 20,
+	default: 1,
+);
+@function layers($key: default) {
+	@return map-get($layers, $key);
+}

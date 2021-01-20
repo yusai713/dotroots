@@ -1,0 +1,17 @@
+.c-flex {
+	display: flex;
+	align-items: center;
+}
+
+.c-flex--column {
+	display: flex;
+	flex-direction: column;
+}
+
+.c-flex--jc-center {
+	justify-content: center;
+}
+
+.c-flex--jc-space-between {
+	justify-content: space-between;
+}

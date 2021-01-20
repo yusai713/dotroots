@@ -1,0 +1,29 @@
+.footer {
+	margin-top: 100px;
+	border-top: solid 5px #3797a4;
+	padding: 50px 0 85px;
+	&__inner {
+		color: $color-primary;
+		position: relative;
+	}
+	&__logo {
+		font-family: Caleb;
+		font-size: 28px;
+		line-height: 1.2;
+	}
+	&__info {
+		font-family: ProximaNova;
+		font-weight: bold;
+		margin-top: 40px;
+		line-height: 2.5;
+	}
+	&__sns {
+		position: absolute;
+		top: 20px;
+		right: 30px;
+	}
+	&__copyright {
+		font-size: 16px;
+		line-height: 2.5;
+	}
+}

@@ -1,0 +1,13 @@
+.container {
+	margin-left: 231px;
+	padding-left: 36px;
+	padding-right: 36px;
+}
+
+.container {
+	@include mq(sp) {
+		margin-top: 100px;
+		margin-left: 0;
+		padding: 0;
+	}
+}

@@ -1,0 +1,8 @@
+.sns-box {
+	&__item {
+		font-size: 36px;
+		& + & {
+			margin-left: 11.5px;
+		}
+	}
+}

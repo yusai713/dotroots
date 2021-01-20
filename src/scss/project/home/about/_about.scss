@@ -1,0 +1,25 @@
+.about {
+	padding: 56px 60px 0;
+	&__box {
+		color: $color-primary;
+		font-weight: bold;
+		width: 42%;
+		& + & {
+			border-left: 3px solid $color-primary;
+			padding-left: 60px;
+			width: 58%;
+		}
+	}
+	&__ttl {
+		font-size: 46px;
+	}
+	&__subttl {
+		font-size: 36px;
+		margin-top: 52px;
+	}
+	&__txt {
+		margin-top: 50px;
+		margin-bottom: 50px;
+		line-height: 2.5;
+	}
+}

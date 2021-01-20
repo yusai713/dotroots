@@ -1,0 +1,37 @@
+{
+  "name": "dotroots",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "scripts": {
+    "start": "gulp",
+    "build": "webpack"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.12.10",
+    "@babel/preset-env": "^7.12.11",
+    "autoprefixer": "^10.2.1",
+    "babel-loader": "^8.2.2",
+    "browser-sync": "^2.26.13",
+    "css-declaration-sorter": "^6.0.2",
+    "gulp": "^4.0.2",
+    "gulp-group-css-media-queries": "^1.2.2",
+    "gulp-mode": "^1.0.2",
+    "gulp-notify": "^3.2.0",
+    "gulp-plumber": "^1.2.1",
+    "gulp-postcss": "^9.0.0",
+    "gulp-sass": "^4.1.0",
+    "gulp-sass-glob": "^1.1.0",
+    "postcss": "^8.1.0",
+    "webpack": "^5.14.0",
+    "webpack-cli": "^4.3.1",
+    "webpack-stream": "^6.1.1"
+  },
+  "dependencies": {
+    "jquery": "^3.5.1",
+    "slick-carousel": "^1.8.1"
+  }
+}

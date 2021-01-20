@@ -1,0 +1,16 @@
+.c-btn {
+	display: inline-block;
+	max-width: 100%;
+}
+
+.c-btn--primary {
+	color: #fff;
+	border-radius: 20px;
+	font-weight: 900;
+	line-height: 1.4;
+	letter-spacing: 1.4px;
+	background-color: $color-primary;
+	padding-top: 28px;
+	padding-bottom: 28px;
+	width: 400px;
+}
