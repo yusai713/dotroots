@@ -1,5 +1,5 @@
 <!-- news -->
-<section class="news">
+<section id="to-news" class="news">
 	<h2 class="news__ttl c-heading">News</h2>
 	<div class="news__list c-flex">
 		<?php
@@ -40,7 +40,8 @@
 								</h2>
 							</div>
 							</a>
-				</article><!-- /news-card -->
+				</article>
+				<!-- /news-card -->
 		<?php endforeach;
 		endif;
 		wp_reset_postdata(); ?>
@@ -49,4 +50,5 @@
 	<div class="news__btn">
 		<a href="" class="c-btn c-btn--primary">more</a>
 	</div>
-</section><!-- /news -->
+</section>
+<!-- /news -->

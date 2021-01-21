@@ -1,5 +1,5 @@
 <!-- about -->
-<section class="about">
+<section id="to-about" class="about">
 	<div class="about__inner c-flex">
 		<div class="about__box">
 			<h2 class="about__ttl c-heading">
@@ -22,6 +22,5 @@
 			</p>
 		</div>
 	</div>
-
 </section>
 <!-- /about -->

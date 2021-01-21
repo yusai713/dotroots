@@ -36,17 +36,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \*************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _totop__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./totop */ \"./src/js/totop.js\");\n/* harmony import */ var _external_slick__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./external/slick */ \"./src/js/external/slick.js\");\n/* harmony import */ var _external_contact_form7__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./external/contact-form7 */ \"./src/js/external/contact-form7.js\");\n/*\n\t参考記事：\n\thttps://qiita.com/KZ-taran/items/b4e5a5c20d1b1e02ed23#2-webpack%E3%81%AE%E5%87%A6%E7%90%86%E5%AF%BE%E8%B1%A1%E3%81%A8%E3%81%AA%E3%82%8Bjs%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E3%81%AE%E6%9B%B8%E3%81%8D%E6%96%B9\n*/\n\n(0,_totop__WEBPACK_IMPORTED_MODULE_0__.default)();\n\n(0,_external_slick__WEBPACK_IMPORTED_MODULE_1__.default)();\n\n(0,_external_contact_form7__WEBPACK_IMPORTED_MODULE_2__.default)();\nconsole.log(\"おはよう！\");\n\n//# sourceURL=webpack://dotroots/./src/js/index.js?");
-
-/***/ }),
-
-/***/ "./src/js/totop.js":
-/*!*************************!*\
-  !*** ./src/js/totop.js ***!
-  \*************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": function() { return /* binding */ totop; }\n/* harmony export */ });\nfunction totop() {\n  $('#js-totop').click(function () {\n    $('body,html').animate({\n      scrollTop: 0\n    }, 800);\n    return false;\n  });\n}\n\n//# sourceURL=webpack://dotroots/./src/js/totop.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _external_slick__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./external/slick */ \"./src/js/external/slick.js\");\n/* harmony import */ var _external_contact_form7__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./external/contact-form7 */ \"./src/js/external/contact-form7.js\");\n/*\n\t参考記事：\n\thttps://qiita.com/KZ-taran/items/b4e5a5c20d1b1e02ed23#2-webpack%E3%81%AE%E5%87%A6%E7%90%86%E5%AF%BE%E8%B1%A1%E3%81%A8%E3%81%AA%E3%82%8Bjs%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E3%81%AE%E6%9B%B8%E3%81%8D%E6%96%B9\n*/\n//import totop from './totop';\n//totop();\n\n(0,_external_slick__WEBPACK_IMPORTED_MODULE_0__.default)();\n\n(0,_external_contact_form7__WEBPACK_IMPORTED_MODULE_1__.default)();\nconsole.log(\"おはよう！\");\n\n//# sourceURL=webpack://dotroots/./src/js/index.js?");
 
 /***/ })
 

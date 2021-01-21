@@ -19,11 +19,7 @@
 			<div class="header__box">
 				<p class="header__logo">
 					<a href="<?php echo esc_url(home_url('/')); ?>">
-						<?php if (is_mobile()) : ?>
-							<img src="<?= get_template_directory_uri(); ?>/assets/images/common/logo-sp.png" alt="DotRootsのロゴ文字">
-						<?php else : ?>
-							<img src="<?= get_template_directory_uri(); ?>/assets/images/common/logo.png" alt="DotRootsのロゴイラスト">
-						<?php endif; ?>
+						<img src="<?= get_template_directory_uri(); ?>/assets/images/common/logo.png" alt="DotRootsのロゴイラスト">
 					</a>
 				</p>
 				<!-- gnav -->
@@ -37,19 +33,18 @@
 					<p class="header-info__time">CLOSED　Tue. Thu.</p>
 				</div>
 			</div>
-			<div class="header__sns sns-box">
-				<ul class="sns-box__list c-flex c-flex--jc-center">
-					<li class="sns-box__item"><a href=""><img src="<?= get_template_directory_uri(); ?>/assets/images/common/instagram-icon.png" alt="instagramのアイコン"></a></li>
-					<li class="sns-box__item"><a href=""><img src="<?= get_template_directory_uri(); ?>/assets/images/common/line-icon.png" alt="lineのアイコン"></a></li>
-					<li class="sns-box__item"><a href=""><img src="<?= get_template_directory_uri(); ?>/assets/images/common/facebook-icon.png"" alt=" facebookのアイコン"></a></li>
-					<li class=" sns-box__item"><a href=""><img src="<?= get_template_directory_uri(); ?>/assets/images/common/twitter-icon.png" alt="twitterのアイコン"></a></li>
+			<div class="header__sns c-sns-box">
+				<ul class="c-sns-box__list c-flex c-flex--jc-center">
+					<li class="c-sns-box__item"><a href=""><img src="<?= get_template_directory_uri(); ?>/assets/images/common/instagram-icon.png" alt="instagramのアイコン"></a></li>
+					<li class="c-sns-box__item"><a href=""><img src="<?= get_template_directory_uri(); ?>/assets/images/common/line-icon.png" alt="lineのアイコン"></a></li>
+					<li class="c-sns-box__item"><a href=""><img src="<?= get_template_directory_uri(); ?>/assets/images/common/facebook-icon.png"" alt=" facebookのアイコン"></a></li>
+					<li class=" c-sns-box__item"><a href=""><img src="<?= get_template_directory_uri(); ?>/assets/images/common/twitter-icon.png" alt="twitterのアイコン"></a></li>
 				</ul>
 			</div>
-			<a href="#" class="header__totop" id="js-totop">TOP</a>
+			<a href="#to-contact" class="header__contact">Contact</a>
 			<!-- drawer -->
-			<?php if (is_mobile()) : ?>
-				<?php get_template_part('template-parts/drawer'); ?>
-			<?php endif; ?>
+			<?php get_template_part('template-parts/drawer'); ?>
 			<!-- /drawer -->
 		</div>
-	</header><!-- /header -->
+	</header>
+	<!-- /header -->

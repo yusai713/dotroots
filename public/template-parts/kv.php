@@ -17,4 +17,5 @@
 			<p class="kv__subttl">HOTSANDWICH ,COFFE</p>
 		</div>
 	</div>
-</div><!-- /kv -->
+</div>
+<!-- /kv -->

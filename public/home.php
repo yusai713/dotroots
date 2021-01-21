@@ -11,5 +11,6 @@
 		<?php get_template_part('template-parts/home/service'); ?>
 		<?php get_template_part('template-parts/home/access'); ?>
 		<?php get_template_part('template-parts/home/contact'); ?>
-	</main><!-- /main -->
+	</main>
+	<!-- /main -->
 	<?php get_footer(); ?>

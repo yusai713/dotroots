@@ -1,7 +1,10 @@
 .drawer {
 	display: none;
-	position: relative;
-	background-color: $color-primary;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
 	width: 26vw;
 
 	@include mq(sp) {
@@ -51,64 +54,37 @@
 			}
 		}
 
-		// ドロワーメニュー開いた時のメインエリアを暗く
-		&__overlay {
-			background: #000;
-			opacity: 0;
-			pointer-events: none; //ポインタの動作全部無効化
-			width: 100%;
-			height: 100%;
-			position: fixed;
-			top: 0;
-			right: 0;
-			z-index: 98;
-		}
-
 		&__menu {
-			background: #ffffff;
+			background: $color-primary;
 			max-width: 100%;
-			width: 215px;
-			opacity: 0.95;
+			width: 100%;
+			//opacity: 0.95;
 			box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
 			overflow-y: auto; //スクロール
 			-webkit-overflow-scrolling: touch; //スクロール（SP）
 			position: fixed;
 			top: 0;
-			right: -215px;
+			right: -100%;
 			z-index: 99;
+			margin-top: 26vw;
+			color: #fff;
 		}
 
 		&__list {
-			margin: 65px 0 45px;
 			text-align: center;
-		}
-
-		&__item {
-			margin-bottom: 40px;
-
-			a {
-				font-size: 1.4rem;
-			}
-		}
-
-		&__sns {
-			a {
-				font-size: 2.04rem;
-
-				&:not(:last-of-type) {
-					margin-right: 1rem;
-				}
-			}
+			min-height: calc(100vh - 26vw);
 		}
 
 		&__btn {
 			a {
-				background: #000;
-				color: #fff;
-				display: inline-block;
-				font-size: 1.8rem;
-				padding: 10px 0;
-				width: 168px;
+				background: #fff;
+				color: $color-primary;
+				border-radius: 20px;
+				font-weight: 900;
+				line-height: 1.4;
+				letter-spacing: 1.4px;
+				padding: 20px 0;
+				width: 250px;
 			}
 		}
 
@@ -120,14 +96,14 @@
 				}
 
 				.drawer__icon-parts:before {
-					background-color: #1b224c;
+					background-color: #fff;
 					-webkit-transform: rotate(-45deg);
 					transform: rotate(-45deg);
 					top: 0;
 				}
 
 				.drawer__icon-parts:after {
-					background-color: #1b224c;
+					background-color: #fff;
 					-webkit-transform: rotate(45deg);
 					transform: rotate(45deg);
 					top: 0;

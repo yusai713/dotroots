@@ -1,4 +1,5 @@
-<section class="equipment">
+<!-- equipment -->
+<section id="to-equipment" class="equipment">
 	<h2 class="equipment__ttl c-heading">Equipment</h2>
 	<div class="equipment__list c-flex">
 		<div class="equipment__item equipment-card c-card">
@@ -28,3 +29,4 @@
 		</div>
 	</div>
 </section>
+<!-- /equipment -->

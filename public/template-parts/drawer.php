@@ -6,28 +6,22 @@
 	</label>
 	<label class="drawer__overlay" for="drawerCheckbox"></label>
 	<nav class="drawer__menu">
-		<ul class="drawer__list">
-			<li class="drawer__item">
-				<a href="<?php echo esc_url(home_url('/')); ?>">TOP</a>
-			</li>
-			<li class="drawer__item"><a href="<?php echo get_page_link(46); ?>">CONSULTING</a></li>
-			<li class="drawer__item"><a href="<?php echo get_page_link(48); ?>">PRODUCT</a></li>
-			<li class="drawer__item"><a href="<?php echo get_category_link(3); ?>">NEWS</a></li>
-			<li class="drawer__item"><a href="<?php echo get_page_link(42); ?>">COMPANY</a></li>
-			<li class="drawer__item"><a href="https://en-gage.net/worldlead/">RECRUIT</a></li>
-			<li class="drawer__item drawer__sns">
-				<a href="https://twitter.com/_Growth_Career?fbclid=IwAR2XR8d8QFVInLS7hsak3DW_w1wX8dF20W7TYnV6NwUgdAurTKq0vbgMc0Y" class="">
-					<i class="fab fa-twitter-square"></i>
-				</a>
-				<a href="https://www.facebook.com/World-Lead-CoLtd-1885973974987620/" class="">
-					<i class="fab fa-facebook-square"></i>
-				</a>
-				<a href="https://www.instagram.com/growth_career_/?hl=ja">
-					<i class="fab fa-instagram"></i>
-				</a>
+		<ul class="drawer__list c-flex c-flex--column c-flex--jc-space-around">
+			<li class="drawer__item"><a href="#about">About</a></li>
+			<li class="drawer__item"><a href="#news">News</a></li>
+			<li class="drawer__item"><a href="#menu">Menu</a></li>
+			<li class="drawer__item"><a href="#equipment">Equipment</a></li>
+			<li class="drawer__item"><a href="#service">Service</a></li>
+			<li class="drawer__item"><a href="#service">Other</a></li>
+			<li class="drawer__item"><a href="#access">Access</a></li>
+			<li class="drawer__item c-sns-box">
+				<a href="" class="c-sns-box__item"><img src="<?= get_template_directory_uri(); ?>/assets/images/common/instagram-icon.png" alt="instagramのアイコン"></a>
+				<a href="" class="c-sns-box__item"><img src="<?= get_template_directory_uri(); ?>/assets/images/common/line-icon.png" alt="lineのアイコン"></a>
+				<a href="" class="c-sns-box__item"><img src="<?= get_template_directory_uri(); ?>/assets/images/common/facebook-icon.png" alt=" facebookのアイコン"></a>
+				<a href="" class="c-sns-box__item"><img src="<?= get_template_directory_uri(); ?>/assets/images/common/twitter-icon.png" alt="twitterのアイコン"></a>
 			</li>
 			<li class="drawer__item drawer__btn">
-				<a href="<?php echo get_page_link(150); ?>">CONTACT</a>
+				<a href="#contact" class="c-btn">Contact</a>
 			</li>
 		</ul>
 	</nav>
