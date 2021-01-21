@@ -26,7 +26,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \**********************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": function() { return /* binding */ slick; }\n/* harmony export */ });\nfunction slick() {\n  $('#mainVisual').slick({\n    //{}を入れる\n    arrows: false,\n    dots: true,\n    autoplay: true,\n    autoplaySpeed: 2000,\n    speed: 2000,\n    fade: true\n  });\n}\n\n//# sourceURL=webpack://dotroots/./src/js/external/slick.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": function() { return /* binding */ slick; }\n/* harmony export */ });\nfunction slick() {\n  $('#mainVisual').slick({\n    arrows: false,\n    dots: true,\n    autoplay: true,\n    autoplaySpeed: 2000,\n    speed: 2000,\n    fade: true\n  });\n}\n\n//# sourceURL=webpack://dotroots/./src/js/external/slick.js?");
 
 /***/ }),
 

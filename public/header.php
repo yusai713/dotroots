@@ -18,25 +18,24 @@
 		<div class="header__inner">
 			<div class="header__box">
 				<p class="header__logo">
-					<a href="<?php echo esc_url(home_url('/')); ?>"><img src="<?= get_template_directory_uri(); ?>/assets/images/common/logo.png" alt="DotRootsのロゴ画像"></a>
+					<a href="<?php echo esc_url(home_url('/')); ?>">
+						<?php if (is_mobile()) : ?>
+							<img src="<?= get_template_directory_uri(); ?>/assets/images/common/logo-sp.png" alt="DotRootsのロゴ文字">
+						<?php else : ?>
+							<img src="<?= get_template_directory_uri(); ?>/assets/images/common/logo.png" alt="DotRootsのロゴイラスト">
+						<?php endif; ?>
+					</a>
 				</p>
 				<!-- gnav -->
-				<nav class="header__nav gnav">
-					<ul class="gnav__list">
-						<li class="gnav__item"><a href="#about">About</a></li>
-						<li class="gnav__item"><a href="#news">News</a></li>
-						<li class="gnav__item"><a href="#menu">Menu</a></li>
-						<li class="gnav__item"><a href="#service">Service</a></li>
-						<li class="gnav__item"><a href="#access">Access</a></li>
-						<li class="gnav__item"><a href="#other">Other</a></li>
-					</ul>
-				</nav><!-- /gnav -->
+				<?php get_template_part('template-parts/gnav'); ?>
+				<!-- /gnav -->
 			</div>
 			<div class="header__info header-info">
-				<p class="header-info__area">OKINAWA URUMA</p>
-				<p class="header-info__time">OPEN　9:00-17:30</p>
-				<p class="header-info__time">CLOSED　Tue. Thu.</p>
-
+				<div class="header-info__inner">
+					<p class="header-info__area">OKINAWA URUMA</p>
+					<p class="header-info__time">OPEN　9:00-17:30</p>
+					<p class="header-info__time">CLOSED　Tue. Thu.</p>
+				</div>
 			</div>
 			<div class="header__sns sns-box">
 				<ul class="sns-box__list c-flex c-flex--jc-center">
@@ -47,5 +46,10 @@
 				</ul>
 			</div>
 			<a href="#" class="header__totop" id="js-totop">TOP</a>
+			<!-- drawer -->
+			<?php if (is_mobile()) : ?>
+				<?php get_template_part('template-parts/drawer'); ?>
+			<?php endif; ?>
+			<!-- /drawer -->
 		</div>
 	</header><!-- /header -->

@@ -1,0 +1,157 @@
+.drawer {
+	display: none;
+	position: relative;
+	background-color: $color-primary;
+	width: 26vw;
+
+	@include mq(sp) {
+		display: block;
+
+		&__checkbox {
+			display: none;
+		}
+
+		&__icon {
+			cursor: pointer;
+			display: block;
+			width: 8vw;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translateY(-50%) translateX(-50%);
+			z-index: 100;
+
+			// ハンバーガーアイコンの中の線
+			&-parts,
+			&-parts:before,
+			&-parts:after {
+				background-color: #fff;
+				display: block;
+				width: 100%;
+				height: 0.6vw;
+				position: absolute;
+				top: 0;
+				right: 0;
+				left: 0;
+				bottom: 0;
+				margin: auto;
+			}
+
+			&-parts:before,
+			&-parts:after {
+				content: " ";
+			}
+
+			&-parts:before {
+				top: -6vw;
+			}
+
+			&-parts:after {
+				top: 6vw;
+			}
+		}
+
+		// ドロワーメニュー開いた時のメインエリアを暗く
+		&__overlay {
+			background: #000;
+			opacity: 0;
+			pointer-events: none; //ポインタの動作全部無効化
+			width: 100%;
+			height: 100%;
+			position: fixed;
+			top: 0;
+			right: 0;
+			z-index: 98;
+		}
+
+		&__menu {
+			background: #ffffff;
+			max-width: 100%;
+			width: 215px;
+			opacity: 0.95;
+			box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+			overflow-y: auto; //スクロール
+			-webkit-overflow-scrolling: touch; //スクロール（SP）
+			position: fixed;
+			top: 0;
+			right: -215px;
+			z-index: 99;
+		}
+
+		&__list {
+			margin: 65px 0 45px;
+			text-align: center;
+		}
+
+		&__item {
+			margin-bottom: 40px;
+
+			a {
+				font-size: 1.4rem;
+			}
+		}
+
+		&__sns {
+			a {
+				font-size: 2.04rem;
+
+				&:not(:last-of-type) {
+					margin-right: 1rem;
+				}
+			}
+		}
+
+		&__btn {
+			a {
+				background: #000;
+				color: #fff;
+				display: inline-block;
+				font-size: 1.8rem;
+				padding: 10px 0;
+				width: 168px;
+			}
+		}
+
+		&__checkbox:checked ~ {
+			// ハンバーガーアイコン
+			.drawer__icon {
+				.drawer__icon-parts {
+					background: transparent;
+				}
+
+				.drawer__icon-parts:before {
+					background-color: #1b224c;
+					-webkit-transform: rotate(-45deg);
+					transform: rotate(-45deg);
+					top: 0;
+				}
+
+				.drawer__icon-parts:after {
+					background-color: #1b224c;
+					-webkit-transform: rotate(45deg);
+					transform: rotate(45deg);
+					top: 0;
+				}
+			}
+
+			// メインエリアを暗くする
+			.drawer__overlay {
+				opacity: 0.3;
+				pointer-events: auto; //ポインタの動作デフォルトに戻す
+			}
+
+			.drawer__menu {
+				right: 0;
+			}
+		}
+
+		// 動きをスムーズに
+		&__icon-parts,
+		&__icon-parts:after,
+		&__icon-parts:before,
+		&__menu {
+			-webkit-transition: all 0.7s;
+			transition: all 0.7s;
+		}
+	}
+}

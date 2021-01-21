@@ -49,22 +49,36 @@
 .header {
 	@include mq(sp) {
 		width: 100%;
-		height: 100px;
+		height: 25vw;
 		min-height: auto;
 		&__inner {
-			text-align: left;
+			height: 100%;
+			display: flex;
 		}
-		&__info,
+		&__box {
+			width: 26vw;
+			padding: 0;
+		}
+		&__logo {
+			height: 100%;
+			a {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				height: 100%;
+			}
+			img {
+				width: 85%;
+			}
+		}
+		&__info {
+			width: 48%;
+			padding: 0;
+		}
 		&__sns,
 		&__totop,
 		&__nav {
 			display: none;
-		}
-		&__box {
-			padding: 0;
-			img {
-				height: 100px;
-			}
 		}
 	}
 }

@@ -1,5 +1,5 @@
 export default function slick() {
-  $('#mainVisual').slick({ //{}を入れる
+  $('#mainVisual').slick({
     arrows: false,
     dots: true,
     autoplay: true,

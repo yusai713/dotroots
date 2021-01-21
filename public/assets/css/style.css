@@ -600,21 +600,36 @@ body {
 /*--sp--*/
 @media screen and (max-width: 767px) {
   .header {
-    height: 100px;
+    height: 25vw;
     min-height: auto;
     width: 100%;
   }
   .header__inner {
-    text-align: left;
-  }
-  .header__info, .header__sns, .header__totop, .header__nav {
-    display: none;
+    display: flex;
+    height: 100%;
   }
   .header__box {
     padding: 0;
+    width: 26vw;
   }
-  .header__box img {
-    height: 100px;
+  .header__logo {
+    height: 100%;
+  }
+  .header__logo a {
+    align-items: center;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+  }
+  .header__logo img {
+    width: 85%;
+  }
+  .header__info {
+    padding: 0;
+    width: 48%;
+  }
+  .header__sns, .header__totop, .header__nav {
+    display: none;
   }
 }
 
@@ -705,6 +720,124 @@ body {
   margin-left: 11.5px;
 }
 
+.drawer {
+  background-color: #3797a4;
+  display: none;
+  position: relative;
+  width: 26vw;
+}
+
+@media screen and (max-width: 767px) {
+  .drawer {
+    display: block;
+  }
+  .drawer__checkbox {
+    display: none;
+  }
+  .drawer__icon {
+    cursor: pointer;
+    display: block;
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    width: 8vw;
+    z-index: 100;
+  }
+  .drawer__icon-parts, .drawer__icon-parts:before, .drawer__icon-parts:after {
+    background-color: #fff;
+    bottom: 0;
+    display: block;
+    height: 0.6vw;
+    left: 0;
+    margin: auto;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+  }
+  .drawer__icon-parts:before, .drawer__icon-parts:after {
+    content: " ";
+  }
+  .drawer__icon-parts:before {
+    top: -6vw;
+  }
+  .drawer__icon-parts:after {
+    top: 6vw;
+  }
+  .drawer__overlay {
+    background: #000;
+    height: 100%;
+    opacity: 0;
+    pointer-events: none;
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 100%;
+    z-index: 98;
+  }
+  .drawer__menu {
+    -webkit-overflow-scrolling: touch;
+    background: #ffffff;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+    max-width: 100%;
+    opacity: 0.95;
+    overflow-y: auto;
+    position: fixed;
+    right: -215px;
+    top: 0;
+    width: 215px;
+    z-index: 99;
+  }
+  .drawer__list {
+    margin: 65px 0 45px;
+    text-align: center;
+  }
+  .drawer__item {
+    margin-bottom: 40px;
+  }
+  .drawer__item a {
+    font-size: 1.4rem;
+  }
+  .drawer__sns a {
+    font-size: 2.04rem;
+  }
+  .drawer__sns a:not(:last-of-type) {
+    margin-right: 1rem;
+  }
+  .drawer__btn a {
+    background: #000;
+    color: #fff;
+    display: inline-block;
+    font-size: 1.8rem;
+    padding: 10px 0;
+    width: 168px;
+  }
+  .drawer__checkbox:checked ~ .drawer__icon .drawer__icon-parts {
+    background: transparent;
+  }
+  .drawer__checkbox:checked ~ .drawer__icon .drawer__icon-parts:before {
+    background-color: #1b224c;
+    top: 0;
+    transform: rotate(-45deg);
+  }
+  .drawer__checkbox:checked ~ .drawer__icon .drawer__icon-parts:after {
+    background-color: #1b224c;
+    top: 0;
+    transform: rotate(45deg);
+  }
+  .drawer__checkbox:checked ~ .drawer__overlay {
+    opacity: 0.3;
+    pointer-events: auto;
+  }
+  .drawer__checkbox:checked ~ .drawer__menu {
+    right: 0;
+  }
+  .drawer__icon-parts, .drawer__icon-parts:after, .drawer__icon-parts:before, .drawer__menu {
+    transition: all 0.7s;
+  }
+}
+
 .gnav__item {
   color: #000;
   font-size: 14px;
@@ -730,6 +863,25 @@ body {
 
 .header-info__time + .header-info__time {
   margin-top: 6px;
+}
+
+@media screen and (max-width: 767px) {
+  .header-info {
+    position: relative;
+  }
+  .header-info__inner {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+  }
+  .header-info__area {
+    font-size: 16px;
+  }
+  .header-info__time {
+    font-size: 12px;
+  }
 }
 
 .kv {

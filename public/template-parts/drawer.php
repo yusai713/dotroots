@@ -1,5 +1,5 @@
 <!--drawer-->
-<div class="drawer">
+<div class="header__drawer drawer">
 	<input class="drawer__checkbox" id="drawerCheckbox" type="checkbox">
 	<label class="drawer__icon" for="drawerCheckbox">
 		<span class="drawer__icon-parts"></span>
