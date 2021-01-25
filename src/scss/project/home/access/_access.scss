@@ -1,11 +1,9 @@
 .access {
-	padding-top: 100px;
 	&__map {
 		position: relative;
 		width: 100%;
 		padding-top: 35%; /* = height ÷ width × 100 */
-		margin-top: 35px;
-		border: solid 6px $color-primary;
+		border: solid 5px $color-primary;
 		border-radius: 30px;
 		overflow: hidden;
 		iframe {
@@ -24,11 +22,11 @@
 		width: 42%;
 		img {
 			border-radius: 30px;
+			width: 96%;
 		}
 		& + & {
 			border-left: 3px solid $color-primary;
-			padding-left: 40px;
-			margin-left: 40px;
+			padding-left: 4vw;
 			width: 58%;
 		}
 	}

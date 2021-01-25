@@ -1,4 +1,11 @@
 /* font-family
 ---------------------*/
+@font-face {
+	font-family: "Luckiest Guy";
+	src: url("../fonts/LuckiestGuy.ttf") format("truetype");
+}
+
 $font-family: Arial, "Helvetica Neue", "Hiragino Kaku Gothic ProN",
 	"Hiragino Sans", Meiryo, sans-serif;
+
+$font-family-lukiest: "Luckiest Guy";

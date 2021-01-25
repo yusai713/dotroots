@@ -5,9 +5,10 @@
 	right: 0;
 	bottom: 0;
 	margin: auto;
-	width: 26vw;
+	width: 25vw;
+	border-left: 2px solid #fff;
 
-	@include mq(sp) {
+	@include mq(tab) {
 		display: block;
 
 		&__checkbox {
@@ -22,7 +23,7 @@
 			top: 50%;
 			left: 50%;
 			transform: translateY(-50%) translateX(-50%);
-			z-index: 100;
+			z-index: layers(drawer);
 
 			// ハンバーガーアイコンの中の線
 			&-parts,
@@ -31,7 +32,7 @@
 				background-color: #fff;
 				display: block;
 				width: 100%;
-				height: 0.6vw;
+				height: 0.65vw;
 				position: absolute;
 				top: 0;
 				right: 0;
@@ -65,14 +66,19 @@
 			position: fixed;
 			top: 0;
 			right: -100%;
-			z-index: 99;
-			margin-top: 26vw;
-			color: #fff;
+			z-index: layers(drawer);
+			margin-top: 25vw;
 		}
 
 		&__list {
 			text-align: center;
 			min-height: calc(100vh - 26vw);
+			padding: 5vw;
+		}
+
+		&__item {
+			font-weight: bold;
+			color: #fff;
 		}
 
 		&__btn {

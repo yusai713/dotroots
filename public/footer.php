@@ -19,7 +19,6 @@
   		</div>
   		<small class="footer__copyright">© <?php echo date('Y'); ?> <?php bloginfo('name'); ?></small>
   	</div>
-  	</div>
   </footer>
   <!-- /footer -->
   </div>

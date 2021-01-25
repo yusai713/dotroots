@@ -1,7 +1,13 @@
 .c-heading {
-	font-size: 56px;
-	font-weight: bold;
-	font-family: Caleb;
+	font-size: 4.5vw;
+	font-family: $font-family-lukiest;
+	letter-spacing: 0.05em;
 	line-height: 1.2;
 	color: $color-primary;
+	&:not(.about__ttl) {
+		margin-bottom: 35px;
+	}
+	@include mq(tab) {
+		font-size: 8vw;
+	}
 }

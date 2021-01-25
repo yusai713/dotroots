@@ -13,11 +13,20 @@
 		&--03 {
 			background-image: url(../images/home/service_consignment-sale.png);
 		}
+		&--04 {
+			background-image: url(../images/home/equipment_pc.png);
+		}
+		&--05 {
+			background-image: url(../images/home/equipment_boardgame.png);
+		}
+		&--06 {
+			background-image: url(../images/home/equipment_animal.png);
+		}
 	}
 	&__box {
 		bottom: 0;
 		border-radius: 0 0 30px 30px;
-		padding: 26px 0;
+		padding: 8% 0;
 		background-color: $color-primary;
 		width: 100%;
 		text-align: center;
@@ -26,14 +35,14 @@
 		color: #fff;
 		font-family: ProximaNova;
 		font-weight: 800;
-		line-height: 1.8;
+		line-height: 2;
 	}
 	&__desc {
 		color: $color-primary;
 		font-family: ProximaNova;
 		font-weight: 600;
 		line-height: 2;
-		margin-top: 25px;
+		margin-top: 15px;
 		font-size: 14px;
 	}
 }

@@ -1,6 +1,7 @@
 .menu {
-	padding-top: 100px;
 	&__image {
-		margin-top: 35px;
+		border: solid 5px $color-primary;
+		border-radius: 30px;
+		overflow: hidden;
 	}
 }

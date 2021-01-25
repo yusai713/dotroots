@@ -1,29 +1,32 @@
 .footer {
-	margin-top: 100px;
+	margin-top: 120px;
 	border-top: solid 5px #3797a4;
-	padding: 50px 0 85px;
+	padding-top: 60px;
 	&__inner {
 		color: $color-primary;
 		position: relative;
 	}
 	&__logo {
-		font-family: Caleb;
-		font-size: 28px;
-		line-height: 1.2;
+		font-family: $font-family-lukiest;
+		font-size: 40px;
 	}
 	&__info {
-		font-family: ProximaNova;
 		font-weight: bold;
-		margin-top: 40px;
+		margin-top: 25px;
 		line-height: 2.5;
 	}
 	&__sns {
 		position: absolute;
-		top: 20px;
-		right: 30px;
+		top: 0;
+		right: 0;
 	}
 	&__copyright {
+		font-family: $font-family-lukiest;
 		font-size: 16px;
 		line-height: 2.5;
+		margin-top: 30px;
+		display: inline-block;
+		width: 100%;
+		text-align: center;
 	}
 }

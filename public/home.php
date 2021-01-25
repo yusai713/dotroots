@@ -7,7 +7,8 @@
 		<?php get_template_part('template-parts/home/about'); ?>
 		<?php get_template_part('template-parts/home/news'); ?>
 		<?php get_template_part('template-parts/home/menu'); ?>
-		<?php get_template_part('template-parts/home/equipment'); ?>
+		<?php //get_template_part('template-parts/home/equipment'); 
+		?>
 		<?php get_template_part('template-parts/home/service'); ?>
 		<?php get_template_part('template-parts/home/access'); ?>
 		<?php get_template_part('template-parts/home/contact'); ?>

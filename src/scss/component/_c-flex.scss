@@ -1,11 +1,19 @@
 .c-flex {
 	display: flex;
 	align-items: center;
+	flex-wrap: wrap;
+	@include mq(tab) {
+		display: block;
+	}
 }
 
 .c-flex--column {
 	display: flex;
 	flex-direction: column;
+}
+
+.c-flex--ai-flex-start {
+	align-items: flex-start;
 }
 
 .c-flex--jc-center {

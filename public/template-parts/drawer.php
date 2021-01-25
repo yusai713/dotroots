@@ -12,7 +12,6 @@
 			<li class="drawer__item"><a href="#menu">Menu</a></li>
 			<li class="drawer__item"><a href="#equipment">Equipment</a></li>
 			<li class="drawer__item"><a href="#service">Service</a></li>
-			<li class="drawer__item"><a href="#service">Other</a></li>
 			<li class="drawer__item"><a href="#access">Access</a></li>
 			<li class="drawer__item c-sns-box">
 				<a href="" class="c-sns-box__item"><img src="<?= get_template_directory_uri(); ?>/assets/images/common/instagram-icon.png" alt="instagramのアイコン"></a>

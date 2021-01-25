@@ -3,6 +3,11 @@
 ---------------------*/
 /* font-family
 ---------------------*/
+@font-face {
+  font-family: "Luckiest Guy";
+  src: url("../fonts/LuckiestGuy.ttf") format("truetype");
+}
+
 /* z-index
 ---------------------*/
 /* media query
@@ -486,6 +491,7 @@ html {
   text-rendering: optimizeLegibility;
   font-size: 16px;
   height: 100%;
+  line-height: 1;
   scroll-behavior: smooth;
 }
 
@@ -496,23 +502,22 @@ body {
 }
 
 .container {
-  margin-left: 231px;
-  padding-left: 36px;
-  padding-right: 36px;
+  margin-left: 16.837vw;
+  padding: 0 2vw;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1023px) {
   .container {
     margin-left: 0;
-    margin-top: 100px;
-    padding: 0;
+    margin-top: 25vw;
+    padding: 0 4vw;
   }
 }
 
 .footer {
   border-top: solid 5px #3797a4;
-  margin-top: 100px;
-  padding: 50px 0 85px;
+  margin-top: 120px;
+  padding-top: 60px;
 }
 
 .footer__inner {
@@ -521,27 +526,30 @@ body {
 }
 
 .footer__logo {
-  font-family: Caleb;
-  font-size: 28px;
-  line-height: 1.2;
+  font-family: "Luckiest Guy";
+  font-size: 40px;
 }
 
 .footer__info {
-  font-family: ProximaNova;
   font-weight: bold;
   line-height: 2.5;
-  margin-top: 40px;
+  margin-top: 25px;
 }
 
 .footer__sns {
   position: absolute;
-  right: 30px;
-  top: 20px;
+  right: 0;
+  top: 0;
 }
 
 .footer__copyright {
+  display: inline-block;
+  font-family: "Luckiest Guy";
   font-size: 16px;
   line-height: 2.5;
+  margin-top: 30px;
+  text-align: center;
+  width: 100%;
 }
 
 .header {
@@ -551,17 +559,19 @@ body {
   overflow-y: auto;
   position: fixed;
   top: 0;
-  width: 231px;
+  width: 16.837vw;
   z-index: 20;
 }
 
 .header__inner {
+  font-family: "Luckiest Guy";
+  letter-spacing: 0.05em;
   text-align: center;
 }
 
 .header__box {
   background-color: #fbf876;
-  padding: 0 7px 40px;
+  padding: 0 5px 40px;
 }
 
 .header__logo {
@@ -576,15 +586,13 @@ body {
 .header__info {
   background-color: #3797a4;
   color: #fff;
-  padding-bottom: 40px;
-  padding-top: 32px;
+  padding: 40px 0;
 }
 
 .header__sns {
   background-color: #8dcbbe;
   color: #fff;
-  padding-bottom: 20px;
-  padding-top: 20px;
+  padding: 1.464vw 0;
 }
 
 .header__contact {
@@ -592,16 +600,15 @@ body {
   color: #fff;
   display: inline-block;
   font-size: 18px;
-  font-weight: bold;
-  line-height: 1.2;
   padding: 25px 0;
   width: 100%;
 }
 
-/*--sp--*/
-@media screen and (max-width: 767px) {
+/*--- tab ---*/
+@media screen and (max-width: 1023px) {
   .header {
-    height: 26vw;
+    border-bottom: 2px solid #fff;
+    height: 25vw;
     min-height: auto;
     width: 100%;
   }
@@ -614,7 +621,7 @@ body {
     padding: 0;
     position: absolute;
     top: 0;
-    width: 26vw;
+    width: 25vw;
     z-index: 21;
   }
   .header__logo {
@@ -642,6 +649,12 @@ body {
   padding: 0 2.5%;
 }
 
+@media screen and (max-width: 1023px) {
+  .main {
+    padding: 0;
+  }
+}
+
 .c-btn {
   display: inline-block;
   max-width: 100%;
@@ -651,21 +664,26 @@ body {
   background-color: #3797a4;
   border-radius: 20px;
   color: #fff;
-  font-weight: 900;
-  letter-spacing: 1.4px;
-  line-height: 1.4;
-  padding-bottom: 28px;
-  padding-top: 28px;
+  font-family: "Luckiest Guy";
+  letter-spacing: 0.05em;
+  line-height: 1.5;
+  padding-bottom: 30px;
+  padding-top: 30px;
   width: 400px;
 }
 
 .c-card {
+  margin-right: 3.125%;
   position: relative;
   width: 31.25%;
 }
 
-.c-card + .c-card {
-  margin-left: 3.125%;
+.c-card:nth-of-type(3n) {
+  margin-right: 0;
+}
+
+.c-card:nth-of-type(n + 4) {
+  margin-top: 50px;
 }
 
 .c-card__inner {
@@ -694,11 +712,22 @@ body {
 .c-flex {
   align-items: center;
   display: flex;
+  flex-wrap: wrap;
+}
+
+@media screen and (max-width: 1023px) {
+  .c-flex {
+    display: block;
+  }
 }
 
 .c-flex--column {
   display: flex;
   flex-direction: column;
+}
+
+.c-flex--ai-flex-start {
+  align-items: flex-start;
 }
 
 .c-flex--jc-center {
@@ -715,31 +744,42 @@ body {
 
 .c-heading {
   color: #3797a4;
-  font-family: Caleb;
-  font-size: 56px;
-  font-weight: bold;
+  font-family: "Luckiest Guy";
+  font-size: 4.5vw;
+  letter-spacing: 0.05em;
   line-height: 1.2;
 }
 
-.c-sns-box__item {
-  font-size: 36px;
+.c-heading:not(.about__ttl) {
+  margin-bottom: 35px;
+}
+
+@media screen and (max-width: 1023px) {
+  .c-heading {
+    font-size: 8vw;
+  }
+}
+
+.c-section {
+  padding-top: 120px;
 }
 
 .c-sns-box__item + .c-sns-box__item {
-  margin-left: 11.5px;
+  margin-left: 0.878vw;
 }
 
 .drawer {
+  border-left: 2px solid #fff;
   bottom: 0;
   display: none;
   margin: auto;
   position: absolute;
   right: 0;
   top: 0;
-  width: 26vw;
+  width: 25vw;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1023px) {
   .drawer {
     display: block;
   }
@@ -754,13 +794,13 @@ body {
     top: 50%;
     transform: translateY(-50%) translateX(-50%);
     width: 8vw;
-    z-index: 100;
+    z-index: 40;
   }
   .drawer__icon-parts, .drawer__icon-parts:before, .drawer__icon-parts:after {
     background-color: #fff;
     bottom: 0;
     display: block;
-    height: 0.6vw;
+    height: 0.65vw;
     left: 0;
     margin: auto;
     position: absolute;
@@ -781,19 +821,23 @@ body {
     -webkit-overflow-scrolling: touch;
     background: #3797a4;
     box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
-    color: #fff;
-    margin-top: 26vw;
+    margin-top: 25vw;
     max-width: 100%;
     overflow-y: auto;
     position: fixed;
     right: -100%;
     top: 0;
     width: 100%;
-    z-index: 99;
+    z-index: 40;
   }
   .drawer__list {
     min-height: calc(100vh - 26vw);
+    padding: 5vw;
     text-align: center;
+  }
+  .drawer__item {
+    color: #fff;
+    font-weight: bold;
   }
   .drawer__btn a {
     background: #fff;
@@ -831,9 +875,6 @@ body {
 }
 
 .gnav__item {
-  color: #000;
-  font-size: 14px;
-  font-weight: 900;
   line-height: 1.36;
 }
 
@@ -864,21 +905,18 @@ body {
 
 .header-info__area {
   font-size: 18px;
-  line-height: 1.2;
 }
 
 .header-info__time {
   font-size: 14px;
-  font-weight: 900;
-  line-height: 1.4;
-  margin-top: 20px;
+  margin-top: 25px;
 }
 
 .header-info__time + .header-info__time {
-  margin-top: 6px;
+  margin-top: 10px;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1023px) {
   .header-info {
     position: relative;
   }
@@ -890,19 +928,24 @@ body {
     justify-content: center;
   }
   .header-info__area {
-    font-size: 16px;
+    font-size: 4vw;
   }
   .header-info__time {
-    font-size: 12px;
+    font-size: 2.5vw;
+  }
+  .header-info__time + .header-info__time {
+    margin-top: 1vw;
   }
 }
 
 .kv {
-  padding-bottom: 34px;
-  padding-top: 34px;
+  padding: 2vw 0;
 }
 
 .kv__inner {
+  font-family: "Luckiest Guy";
+  letter-spacing: 0.05em;
+  line-height: 1.2;
   position: relative;
 }
 
@@ -915,83 +958,90 @@ body {
 }
 
 .kv__box {
-  bottom: 44px;
+  bottom: 3.294vw;
   color: #fff;
   position: absolute;
-  right: 70px;
+  right: 5.124vw;
 }
 
 .kv__ttl {
-  font-size: 76px;
-  line-height: 1.2;
+  font-size: 7vw;
 }
 
 .kv__subttl {
-  font-size: 37px;
-  line-height: 1.2;
-  margin-top: 18px;
+  font-size: 2.5vw;
+  margin-top: 1.317vw;
 }
 
-/*--sp--*/
-@media screen and (max-width: 767px) {
+/*-- tab --*/
+@media screen and (max-width: 1023px) {
   .kv {
-    padding: 20px 2.5%;
+    padding: 5vw 0;
   }
   .kv__item img {
-    height: calc(100vh - 140px);
+    height: calc(100vh - 35vw);
+  }
+  .kv__box {
+    bottom: 30px;
+    right: 20px;
   }
   .kv__ttl {
-    font-size: 10.5vw;
-    line-height: 1.3;
-    margin-bottom: 5.5vw;
+    font-size: 9vw;
   }
   .kv__subttl {
-    font-size: 5.5vw;
-    line-height: 1.4;
-    margin-bottom: 0;
+    font-size: 4.5vw;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .kv__item img {
+    height: 69vw;
   }
 }
 
 .about {
-  padding: 56px 60px 0;
+  padding-bottom: calc(60px + 2vw);
+  padding-top: 60px;
 }
 
 .about__box {
   color: #3797a4;
-  font-weight: bold;
-  width: 42%;
+  width: 40%;
 }
 
 .about__box + .about__box {
   border-left: 3px solid #3797a4;
-  padding-left: 60px;
-  width: 58%;
-}
-
-.about__ttl {
-  font-size: 46px;
+  padding-left: 4vw;
+  width: 60%;
 }
 
 .about__subttl {
-  font-size: 36px;
-  margin-top: 52px;
+  font-size: 2.25vw;
+  font-weight: bold;
+  line-height: 1.5;
+  margin-top: 1vw;
 }
 
 .about__txt {
+  font-weight: bold;
   line-height: 2.5;
-  margin-bottom: 50px;
-  margin-top: 50px;
+  margin: 50px 0;
 }
 
-.access {
-  padding-top: 100px;
+/*--- tab ---*/
+@media screen and (max-width: 1023px) {
+  .about__box {
+    width: 100%;
+  }
+  .about__subttl br {
+    display: none;
+  }
 }
 
 .access__map {
-  border: solid 6px #3797a4;
-  border-radius: 30px;
   /* = height ÷ width × 100 */
-  margin-top: 35px;
+  border: solid 5px #3797a4;
+  border-radius: 30px;
   overflow: hidden;
   padding-top: 35%;
   position: relative;
@@ -1017,12 +1067,12 @@ body {
 
 .access__box img {
   border-radius: 30px;
+  width: 96%;
 }
 
 .access__box + .access__box {
   border-left: 3px solid #3797a4;
-  margin-left: 40px;
-  padding-left: 40px;
+  padding-left: 4vw;
   width: 58%;
 }
 
@@ -1031,73 +1081,10 @@ body {
   line-height: 2.5;
 }
 
-.contact {
-  padding-top: 100px;
-}
-
-.contact__form {
-  margin-top: 35px;
-}
-
-.equipment-card__inner {
-  border-radius: 30px;
-}
-
-.equipment-card__inner::before {
-  border-radius: 30px;
-}
-
-.equipment-card__inner--01 {
-  background-image: url(../images/home/equipment_pc.png);
-}
-
-.equipment-card__inner--02 {
-  background-image: url(../images/home/equipment_animal.png);
-}
-
-.equipment-card__inner--03 {
-  background-image: url(../images/home/equipment_boardgame.png);
-}
-
-.equipment-card__box {
-  background-color: #3797a4;
-  border-radius: 0 0 30px 30px;
-  bottom: 0;
-  padding: 26px 0;
-  text-align: center;
-  width: 100%;
-}
-
-.equipment-card__ttl {
-  color: #fff;
-  font-family: ProximaNova;
-  font-weight: 800;
-  line-height: 1.8;
-}
-
-.equipment-card__desc {
-  color: #3797a4;
-  font-family: ProximaNova;
-  font-size: 14px;
-  font-weight: 600;
-  line-height: 2;
-  margin-top: 25px;
-}
-
-.equipment {
-  padding-top: 100px;
-}
-
-.equipment__list {
-  margin-top: 35px;
-}
-
-.menu {
-  padding-top: 100px;
-}
-
 .menu__image {
-  margin-top: 35px;
+  border: solid 5px #3797a4;
+  border-radius: 30px;
+  overflow: hidden;
 }
 
 .news-card__link {
@@ -1111,11 +1098,11 @@ body {
 }
 
 .news-card__box {
-  bottom: 24px;
+  bottom: 40px;
   color: #fff;
   font-family: ProximaNova;
   font-weight: 800;
-  left: 28px;
+  left: 20px;
 }
 
 .news-card__date {
@@ -1124,12 +1111,8 @@ body {
 }
 
 .news-card__ttl {
-  line-height: 1.8;
+  line-height: 1.5;
   margin-top: 10px;
-}
-
-.news {
-  padding-top: 100px;
 }
 
 .news__list {
@@ -1137,7 +1120,7 @@ body {
 }
 
 .news__btn {
-  margin-top: 40px;
+  margin-top: 50px;
   text-align: center;
 }
 
@@ -1161,11 +1144,23 @@ body {
   background-image: url(../images/home/service_consignment-sale.png);
 }
 
+.service-card__inner--04 {
+  background-image: url(../images/home/equipment_pc.png);
+}
+
+.service-card__inner--05 {
+  background-image: url(../images/home/equipment_boardgame.png);
+}
+
+.service-card__inner--06 {
+  background-image: url(../images/home/equipment_animal.png);
+}
+
 .service-card__box {
   background-color: #3797a4;
   border-radius: 0 0 30px 30px;
   bottom: 0;
-  padding: 26px 0;
+  padding: 8% 0;
   text-align: center;
   width: 100%;
 }
@@ -1174,7 +1169,7 @@ body {
   color: #fff;
   font-family: ProximaNova;
   font-weight: 800;
-  line-height: 1.8;
+  line-height: 2;
 }
 
 .service-card__desc {
@@ -1183,15 +1178,7 @@ body {
   font-size: 14px;
   font-weight: 600;
   line-height: 2;
-  margin-top: 25px;
-}
-
-.service {
-  padding-top: 100px;
-}
-
-.service__list {
-  margin-top: 35px;
+  margin-top: 15px;
 }
 
 .wpcf7 label {
@@ -1272,5 +1259,9 @@ body {
 
 .slick-dots li.slick-active button:before {
   color: #fff;
+}
+
+.slick-dotted.slick-slider {
+  margin-bottom: 0;
 }
 /*# sourceMappingURL=sourcemaps/style.css.map */

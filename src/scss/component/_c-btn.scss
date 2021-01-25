@@ -4,13 +4,13 @@
 }
 
 .c-btn--primary {
+	font-family: $font-family-lukiest;
+	letter-spacing: 0.05em;
 	color: #fff;
 	border-radius: 20px;
-	font-weight: 900;
-	line-height: 1.4;
-	letter-spacing: 1.4px;
+	line-height: 1.5;
 	background-color: $color-primary;
-	padding-top: 28px;
-	padding-bottom: 28px;
+	padding-top: 30px;
+	padding-bottom: 30px;
 	width: 400px;
 }

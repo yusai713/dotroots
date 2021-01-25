@@ -1,6 +1,6 @@
 <!-- news -->
 <section id="to-news" class="news">
-	<h2 class="news__ttl c-heading">News</h2>
+	<h2 class="news__ttl c-heading">NEWS</h2>
 	<div class="news__list c-flex">
 		<?php
 		$cat_posts = get_posts(array(
