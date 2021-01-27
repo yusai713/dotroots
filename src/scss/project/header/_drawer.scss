@@ -72,12 +72,12 @@
 
 		&__list {
 			text-align: center;
-			min-height: calc(100vh - 26vw);
+			min-height: calc(100vh - 25vw);
 			padding: 5vw;
 		}
 
 		&__item {
-			font-weight: bold;
+			font-size: 25px;
 			color: #fff;
 		}
 

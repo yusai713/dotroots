@@ -11,7 +11,7 @@
 		}
 	}
 	&__subttl {
-		font-size: 2.25vw;
+		font-size: 3.5vw;
 		margin-top: 1vw;
 		font-weight: bold;
 		line-height: 1.5;
@@ -26,13 +26,27 @@
 /*--- tab ---*/
 .about {
 	@include mq(tab) {
+		padding-top: 10vw;
+		padding-bottom: 15vw;
 		&__box {
 			width: 100%;
+			& + & {
+				border: none;
+				padding-left: 0;
+				margin-top: 8vw;
+				border-top: 1px solid $color-primary;
+				width: 100%;
+			}
 		}
 		&__subttl {
+			font-size: 3.5vw;
 			br {
 				display: none;
 			}
+		}
+		&__txt {
+			margin: 8vw 0 0;
+			font-size: 3.5vw;
 		}
 	}
 }

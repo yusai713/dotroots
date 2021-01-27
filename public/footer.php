@@ -10,7 +10,7 @@
   			営業時間：8:30-18:00（火曜・木曜定休）
   		</p>
   		<div class="footer__sns c-sns-box">
-  			<ul class="footer-sns__list c-flex c-flex--jc-center">
+  			<ul class="footer-sns__list">
   				<li class="c-sns-box__item"><a href=""><img src="<?= get_template_directory_uri(); ?>/assets/images/common/instagram-icon2.png" alt="instagramのアイコン"></a></li>
   				<li class="c-sns-box__item"><a href=""><img src="<?= get_template_directory_uri(); ?>/assets/images/common/line-icon2.png" alt="lineのアイコン"></a></li>
   				<li class="c-sns-box__item"><a href=""><img src="<?= get_template_directory_uri(); ?>/assets/images/common/facebook-icon2.png"" alt=" facebookのアイコン"></a></li>

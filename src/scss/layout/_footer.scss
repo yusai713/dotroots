@@ -30,3 +30,24 @@
 		text-align: center;
 	}
 }
+
+.footer {
+	@include mq(tab) {
+		margin-top: 20vw;
+		&__logo {
+			font-size: 8vw;
+		}
+		&__info {
+			margin-top: 4vw;
+			font-size: 3.5vw;
+		}
+		&__sns {
+			margin-top: 6vw;
+			position: relative;
+		}
+		&__copyright {
+			margin-top: 6vw;
+			font-size: 3.5vw;
+		}
+	}
+}

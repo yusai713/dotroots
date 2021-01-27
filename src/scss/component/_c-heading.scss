@@ -9,5 +9,8 @@
 	}
 	@include mq(tab) {
 		font-size: 8vw;
+		&:not(.about__ttl) {
+			margin-bottom: 5vw;
+		}
 	}
 }

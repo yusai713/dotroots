@@ -46,3 +46,15 @@
 		font-size: 14px;
 	}
 }
+
+.service-card {
+	@include mq(tab) {
+		&__ttl {
+			font-size: 3.5vw;
+		}
+		&__desc {
+			font-size: 3vw;
+			margin-top: 4vw;
+		}
+	}
+}

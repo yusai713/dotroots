@@ -1,9 +1,19 @@
 .news {
-	&__list {
-		margin-top: 35px;
-	}
 	&__btn {
 		margin-top: 50px;
 		text-align: center;
+	}
+}
+
+.news {
+	@include mq(tab) {
+		&__btn {
+			margin-top: 10vw;
+		}
+		&__item {
+			& + & {
+				margin-top: 8vw;
+			}
+		}
 	}
 }

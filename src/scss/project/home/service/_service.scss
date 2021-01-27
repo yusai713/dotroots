@@ -1,2 +1,12 @@
 .service {
 }
+
+.service {
+	@include mq(tab) {
+		&__item {
+			& + & {
+				margin-top: 10vw;
+			}
+		}
+	}
+}

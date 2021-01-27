@@ -23,3 +23,17 @@
 		margin-top: 10px;
 	}
 }
+
+.news-card {
+	@include mq(tab) {
+		&__box {
+			bottom: 20px;
+		}
+		&__date {
+			font-size: 3vw;
+		}
+		&__ttl {
+			font-size: 3.5vw;
+		}
+	}
+}

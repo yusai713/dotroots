@@ -13,4 +13,7 @@
 	padding-top: 30px;
 	padding-bottom: 30px;
 	width: 400px;
+	@include mq(tab) {
+		font-size: 3.5vw;
+	}
 }

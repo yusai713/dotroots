@@ -4,4 +4,11 @@
 			margin-left: 0.878vw;
 		}
 	}
+	@include mq(tab) {
+		&__item {
+			& + & {
+				margin-left: 3vw;
+			}
+		}
+	}
 }

@@ -37,6 +37,7 @@
 	}
 
 	&__row {
+		overflow: hidden;
 		&:not(:last-of-type) {
 			background-color: $color-primary;
 			border: solid 6px $color-primary;
@@ -58,5 +59,34 @@
 	&__textarea-label {
 		display: inline-block;
 		padding: 20px 0 20px 48px;
+	}
+}
+
+.wpcf7 {
+	@include mq(tab) {
+		&__row {
+			&:last-of-type {
+				margin-top: 12vw;
+			}
+			&:not(:last-of-type) {
+				& + & {
+					margin-top: 4vw;
+				}
+			}
+			&:not(:last-of-type):not(:nth-of-type(3)) {
+				padding-left: 5vw;
+			}
+			label {
+				font-size: 3.5vw;
+			}
+			.your-name,
+			.your-email {
+				margin-left: 5vw;
+				width: calc(100% - 16.81vw);
+			}
+		}
+		&__textarea-label {
+			padding: 5vw 2vw;
+		}
 	}
 }

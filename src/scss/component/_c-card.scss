@@ -29,3 +29,16 @@
 		position: absolute;
 	}
 }
+
+.c-card {
+	@include mq(tab) {
+		width: 95%;
+		margin: 0 auto;
+		&:nth-of-type(3n) {
+			margin-right: auto;
+		}
+		&__inner {
+			padding-bottom: 90%;
+		}
+	}
+}
