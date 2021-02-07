@@ -23,7 +23,7 @@
 					</a>
 				</p>
 				<!-- gnav -->
-				<?php get_template_part('template-parts/gnav'); ?>
+				<?php get_template_part('template-parts/common/gnav'); ?>
 				<!-- /gnav -->
 			</div>
 			<div class="header__info header-info">
@@ -41,9 +41,9 @@
 					<li class=" c-sns-box__item"><a href=""><img src="<?= get_template_directory_uri(); ?>/assets/images/common/twitter-icon.png" alt="twitterのアイコン"></a></li>
 				</ul>
 			</div>
-			<a href="#to-contact" class="header__contact">Contact</a>
+			<a href="<?php echo esc_url(home_url('/#to-contact')); ?>" class="header__contact">Contact</a>
 			<!-- drawer -->
-			<?php get_template_part('template-parts/drawer'); ?>
+			<?php get_template_part('template-parts/common/drawer'); ?>
 			<!-- /drawer -->
 		</div>
 	</header>

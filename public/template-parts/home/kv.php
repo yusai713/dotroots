@@ -14,7 +14,7 @@
 				FREETIME<br />
 				&FREEDOM
 			</p>
-			<p class="kv__subttl">HOTSANDWICH ,COFFE</p>
+			<p class="kv__subttl">HOTSANDWICH ,COFFEE</p>
 		</div>
 	</div>
 </div>

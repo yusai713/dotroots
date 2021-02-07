@@ -5,6 +5,6 @@ export default function slick() {
     autoplay: true,
     autoplaySpeed: 2000,
     speed: 2000,
-    fade: true,
+    fade: true
 	});
 }

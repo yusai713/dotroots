@@ -9,4 +9,10 @@ import slick from './external/slick';
 slick();
 import contactForm7 from './external/contact-form7';
 contactForm7();
+import drawer from './drawer';
+drawer();
+import fadein from './fadein';
+$(window).scroll(function () {
+	fadein();
+});
 console.log("おはよう！");

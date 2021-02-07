@@ -10,6 +10,16 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
+/***/ "./src/js/drawer.js":
+/*!**************************!*\
+  !*** ./src/js/drawer.js ***!
+  \**************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": function() { return /* binding */ drawer; }\n/* harmony export */ });\nfunction drawer() {\n  $('.drawer__item > a').click(function () {\n    $('.drawer__checkbox').click();\n  });\n}\n\n//# sourceURL=webpack://dotroots/./src/js/drawer.js?");
+
+/***/ }),
+
 /***/ "./src/js/external/contact-form7.js":
 /*!******************************************!*\
   !*** ./src/js/external/contact-form7.js ***!
@@ -30,13 +40,23 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 
 /***/ }),
 
+/***/ "./src/js/fadein.js":
+/*!**************************!*\
+  !*** ./src/js/fadein.js ***!
+  \**************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": function() { return /* binding */ fadein; }\n/* harmony export */ });\n//fadeinアニメーションの制御\nfunction fadein() {\n  $('.js-fadein').each(function () {\n    //ターゲットの位置を取得\n    var target = $(this).offset().top; //スクロール量を取得\n\n    var scroll = $(window).scrollTop(); //ウィンドウの高さを取得\n\n    var windowHeight = $(window).height(); //ターゲットまでスクロールするとフェードインする\n\n    if (scroll > target - windowHeight) {\n      $(this).css('opacity', '1');\n      $(this).css('transform', 'translateY(0)');\n    }\n  });\n}\n\n//# sourceURL=webpack://dotroots/./src/js/fadein.js?");
+
+/***/ }),
+
 /***/ "./src/js/index.js":
 /*!*************************!*\
   !*** ./src/js/index.js ***!
   \*************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _external_slick__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./external/slick */ \"./src/js/external/slick.js\");\n/* harmony import */ var _external_contact_form7__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./external/contact-form7 */ \"./src/js/external/contact-form7.js\");\n/*\n\t参考記事：\n\thttps://qiita.com/KZ-taran/items/b4e5a5c20d1b1e02ed23#2-webpack%E3%81%AE%E5%87%A6%E7%90%86%E5%AF%BE%E8%B1%A1%E3%81%A8%E3%81%AA%E3%82%8Bjs%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E3%81%AE%E6%9B%B8%E3%81%8D%E6%96%B9\n*/\n//import totop from './totop';\n//totop();\n\n(0,_external_slick__WEBPACK_IMPORTED_MODULE_0__.default)();\n\n(0,_external_contact_form7__WEBPACK_IMPORTED_MODULE_1__.default)();\nconsole.log(\"おはよう！\");\n\n//# sourceURL=webpack://dotroots/./src/js/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _external_slick__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./external/slick */ \"./src/js/external/slick.js\");\n/* harmony import */ var _external_contact_form7__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./external/contact-form7 */ \"./src/js/external/contact-form7.js\");\n/* harmony import */ var _drawer__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./drawer */ \"./src/js/drawer.js\");\n/* harmony import */ var _fadein__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./fadein */ \"./src/js/fadein.js\");\n/*\n\t参考記事：\n\thttps://qiita.com/KZ-taran/items/b4e5a5c20d1b1e02ed23#2-webpack%E3%81%AE%E5%87%A6%E7%90%86%E5%AF%BE%E8%B1%A1%E3%81%A8%E3%81%AA%E3%82%8Bjs%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E3%81%AE%E6%9B%B8%E3%81%8D%E6%96%B9\n*/\n//import totop from './totop';\n//totop();\n\n(0,_external_slick__WEBPACK_IMPORTED_MODULE_0__.default)();\n\n(0,_external_contact_form7__WEBPACK_IMPORTED_MODULE_1__.default)();\n\n(0,_drawer__WEBPACK_IMPORTED_MODULE_2__.default)();\n\n$(window).scroll(function () {\n  (0,_fadein__WEBPACK_IMPORTED_MODULE_3__.default)();\n});\nconsole.log(\"おはよう！\");\n\n//# sourceURL=webpack://dotroots/./src/js/index.js?");
 
 /***/ })
 

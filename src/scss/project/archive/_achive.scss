@@ -1,0 +1,37 @@
+.archive {
+	padding-top: 60px;
+}
+
+.archive {
+	@include mq(tab) {
+		padding-top: 10vw;
+		&__list {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+		}
+		&__item {
+			margin: 0 4vw 0 0;
+			width: 44vw;
+			&:nth-of-type(2n) {
+				margin-top: 0;
+				margin-right: 0;
+			}
+			&:nth-of-type(n + 3) {
+				margin-top: 50px;
+			}
+			& .c-card__box {
+				top: 56%;
+				left: 4%;
+				right: 4%;
+			}
+			& .c-card__date {
+				font-size: 2vw;
+			}
+			& .c-card__ttl {
+				font-size: 2.5vw;
+				margin-top: 2vw;
+			}
+		}
+	}
+}

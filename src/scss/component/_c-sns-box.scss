@@ -1,5 +1,8 @@
 .c-sns-box {
 	&__item {
+		&:hover {
+			animation: bound 0.3s ease-in-out infinite alternate;
+		}
 		& + & {
 			margin-left: 0.878vw;
 		}

@@ -1,0 +1,44 @@
+.error-page {
+	padding: 2vw 0 0;
+	min-height: 100vh;
+	&__inner {
+		text-align: center;
+		width: 100%;
+	}
+	&__ttl {
+		font-size: 2em;
+		font-weight: bold;
+		line-height: 1.4;
+		text-align: center;
+	}
+	&__txt {
+		font-size: 1em;
+		line-height: 1.4;
+		margin-top: 10px;
+	}
+	&__thumbnail {
+		width: 64%;
+		margin: 8% auto;
+	}
+	&__btn {
+	}
+}
+
+.error-page {
+	@include mq(tab) {
+		padding: 16vw 0 0;
+		min-height: 100%;
+		&__ttl {
+			font-size: 1.6em;
+		}
+		&__txt {
+			font-size: 0.8em;
+		}
+		&__thumbnail {
+			margin: 10% auto;
+		}
+		&__btn {
+			margin-top: 10vw;
+		}
+	}
+}

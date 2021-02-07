@@ -3,7 +3,8 @@
 	top: 0;
 	left: 0;
 	bottom: 0;
-	width: 16.837vw;
+	//width: 16.837vw;
+	width: 230px;
 	min-height: 100vh;
 	overflow-y: auto;
 	z-index: layers(header);
@@ -15,10 +16,15 @@
 	&__box {
 		background-color: $color-secondary;
 		padding: 0 5px 40px;
+		//height: calc(100vh - 306.5px);
 	}
 	&__logo {
 		margin: 0 auto;
 		width: 100%;
+		transition: all 0.2s;
+		&:hover {
+			transform: scale(1.1, 1.1);
+		}
 		a {
 			display: inline-block;
 		}
@@ -31,7 +37,7 @@
 	&__sns {
 		background-color: #8dcbbe;
 		color: #fff;
-		padding: 1.464vw 0;
+		padding: 20px 0;
 	}
 	&__contact {
 		background-color: #e4e4e4;

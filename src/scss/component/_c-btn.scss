@@ -4,15 +4,19 @@
 }
 
 .c-btn--primary {
+	position: relative;
 	font-family: $font-family-lukiest;
 	letter-spacing: 0.05em;
 	color: #fff;
-	border-radius: 20px;
 	line-height: 1.5;
 	background-color: $color-primary;
 	padding-top: 30px;
 	padding-bottom: 30px;
 	width: 400px;
+	border-radius: 20px;
+	border: 1px solid $color-primary;
+	overflow: hidden;
+	@include anime-reversal;
 	@include mq(tab) {
 		font-size: 3.5vw;
 	}

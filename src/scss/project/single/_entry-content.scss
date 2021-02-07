@@ -1,0 +1,111 @@
+.entry-content {
+	max-width: 750px;
+	width: 100%;
+	margin: 0 auto;
+	padding-top: 60px;
+	&__ttl {
+		font-size: 1.4em;
+		font-weight: bold;
+		line-height: 1.4;
+		padding-bottom: 20px;
+		border-bottom: solid 2px $color-primary;
+	}
+	&__info {
+		margin-top: 25px;
+		font-size: 12px;
+	}
+	&__category {
+		background-color: $color-primary;
+		color: #fff;
+		padding: 6px 8px;
+		margin-left: 10px;
+		display: inline-block;
+	}
+	&__thumbnail {
+		margin-top: 35px;
+	}
+	&__body {
+		color: #000;
+		margin-top: 35px;
+		& h2 {
+			font-size: 1.4em;
+			font-weight: bold;
+			line-height: 1.4;
+			padding: 0.5em 0.75em;
+			margin: 4em 0 2em;
+			border-left: solid 3px #3797a4;
+		}
+		& h3 {
+			font-size: 1.2em;
+			font-weight: bold;
+			margin: 3em 0 2em;
+			line-height: 1.4;
+			&:before {
+				content: "";
+				width: 18px;
+				height: 3px;
+				background-color: $color-primary;
+				margin-right: 0.75em;
+				display: inline-block;
+				vertical-align: middle;
+			}
+		}
+		& p {
+			font-size: 14px;
+			margin-bottom: 2em;
+			line-height: 2;
+		}
+		& p,
+		& figure {
+			margin-bottom: 1.5em;
+		}
+	}
+	&__to-back {
+		margin-top: calc(60px + 2vw);
+		a {
+			font-size: 14px;
+			font-weight: bold;
+			line-height: 1.2;
+			&:before {
+				content: "";
+				width: 10px;
+				height: 10px;
+				border-left: 2px solid $color-primary;
+				border-bottom: 2px solid $color-primary;
+				display: inline-block;
+				transform: rotate(45deg);
+				margin-right: 14px;
+			}
+		}
+	}
+}
+
+.entry-content {
+	@include mq(tab) {
+		padding-top: 10vw;
+
+		&__ttl {
+			font-size: 1.2em;
+			padding-bottom: 15px;
+		}
+		&__info {
+			margin-top: 20px;
+		}
+		&__thumbnail {
+			margin-top: 20px;
+			margin-left: -4vw;
+			margin-right: -4vw;
+		}
+		& h2,
+		& h3 {
+			font-size: 1.2em;
+			margin: 2.5em 0 1em;
+		}
+		& p {
+		}
+
+		&__to-back {
+			margin-top: 15vw;
+		}
+	}
+}

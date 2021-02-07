@@ -1,4 +1,7 @@
 .news {
+	&__item {
+		@include anime-order-control;
+	}
 	&__btn {
 		margin-top: 50px;
 		text-align: center;
@@ -9,11 +12,6 @@
 	@include mq(tab) {
 		&__btn {
 			margin-top: 10vw;
-		}
-		&__item {
-			& + & {
-				margin-top: 8vw;
-			}
 		}
 	}
 }

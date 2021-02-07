@@ -1,9 +1,14 @@
 .service {
+	&__item {
+		display: inline-block;
+		@include anime-order-control;
+	}
 }
 
 .service {
 	@include mq(tab) {
 		&__item {
+			transition-delay: 0s;
 			& + & {
 				margin-top: 10vw;
 			}
